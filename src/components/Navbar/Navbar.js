@@ -104,6 +104,7 @@ export default function NavBar() {
    const fetchAllProductType = async () => {
       const res = await axios.get("/products/allProductType");
       setAllProductType(res.data.productTypes);
+      console.log(res.data.productTypes);
    }
 
    useEffect(() => {
